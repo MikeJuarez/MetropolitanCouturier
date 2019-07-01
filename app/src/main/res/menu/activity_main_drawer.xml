@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_shopping_hanger"
+              android:id="@+id/shop"
+              android:title="@string/shop"/>
+        <item android:icon="@drawable/ic_lightbulb"
+              android:id="@+id/discover"
+              android:title="@string/discover"/>
+        <item android:icon="@drawable/ic_heart"
+              android:id="@+id/wishlist"
+              android:title="@string/wishlist"/>
+        <item android:icon="@drawable/ic_rewards"
+              android:id="@+id/rewards"
+              android:title="@string/rewards"/>
+    </group>
+</menu>

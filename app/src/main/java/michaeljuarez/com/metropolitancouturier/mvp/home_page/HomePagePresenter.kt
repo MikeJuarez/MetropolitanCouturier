@@ -1,5 +1,6 @@
 package michaeljuarez.com.metropolitancouturier.mvp.home_page
 
+import android.os.Handler
 import michaeljuarez.com.metropolitancouturier.restful_api_structures.HomePageItem
 import michaeljuarez.com.metropolitancouturier.views.HomePageActivity
 import michaeljuarez.com.mvpmodulekotlin.MvpPresenter
@@ -11,16 +12,17 @@ class HomePagePresenter(view : HomePageActivity) : MvpPresenter<HomePageActivity
         attachModel(HomePageModel(this))
     }
 
+    // Retrieve the Home Page Item List
     fun getHomePageItemList(){
-        mvpModel.loadHomePageItems()
-    }
 
-    fun getHomePageItemListCallback(homePageItemList : List<HomePageItem>?) {
-        mvpView.homePageItemsCallback(homePageItemList)
-    }
+        // Create anonymous implementation of callback
+        val callback = object : HomePageModel.LoadHomePageItemsCallback {
+            override fun onSuccess(homePageItemList: List<HomePageItem>?) {
+                mvpView.homePageItemsCallback(homePageItemList)
+            }
+        }
 
-    fun getMessage() : String {
-        return mvpModel.getMessage()
+        mvpModel.loadHomePageItems(callback)
     }
 
 }

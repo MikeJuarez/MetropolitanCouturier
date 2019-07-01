@@ -5,4 +5,39 @@
     <string name="app_name_first">Metropolitan</string>
     <string name="app_name_second">Couturier</string>
 
+    <!-- Navigation Drawer Strings -->
+    <string name="shop">Shop</string>
+    <string name="discover">Discover</string>
+    <string name="wishlist">WishList</string>
+    <string name="rewards">Rewards</string>
+
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Shop</item>
+        <item>Discover</item>
+        <item>WishList</item>
+        <item>MC Rewards</item>
+    </string-array>
+
+    <string-array name="navigation_drawer_non_shopping">
+        <item>Inbox</item>
+        <item>Find a store</item>
+        <item>Order History</item>
+        <item>Account Settings</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
 </resources>

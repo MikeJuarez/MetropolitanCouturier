@@ -1,5 +1,6 @@
 package michaeljuarez.com.metropolitancouturier.mvp.home_page
 
+import android.annotation.SuppressLint
 import android.util.Log
 import com.google.firebase.database.*
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -10,6 +11,8 @@ import michaeljuarez.com.mvpmodulekotlin.MvpModel
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.function.Function
+import java.util.stream.Collectors.toList
 
 class HomePageModel(presenter : HomePagePresenter) : MvpModel<HomePagePresenter>() {
 
@@ -19,33 +22,42 @@ class HomePageModel(presenter : HomePagePresenter) : MvpModel<HomePagePresenter>
         attachPresenter(presenter)
     }
 
-    fun getMessage(): String {
-        return "Hello World"
+    interface LoadHomePageItemsCallback {
+        fun onSuccess(homePageItemList : List<HomePageItem>?)
     }
 
-    fun loadHomePageItems(): List<HomePageItem>? {
+    @SuppressLint("CheckResult")
+    fun loadHomePageItems(homePageCallback : LoadHomePageItemsCallback) {
 
-        //val retrofit = RetrofitClient.instance
         val retrofit : Retrofit = Retrofit.Builder()
             .baseUrl("https://metropolitancouturier.firebaseio.com")
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
 
-        var apiHomePageItems = retrofit.create(ApiHomePage::class.java)
+        val apiHomePageItems = retrofit.create(ApiHomePage::class.java)
 
         apiHomePageItems.getHomePageItems()
+            .map { addRightArrows(it) }
             .subscribeOn(Schedulers.io())
             .unsubscribeOn(Schedulers.computation())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                mvpPresenter.getHomePageItemListCallback(it)
+                homePageCallback.onSuccess(it)
+                //mvpPresenter.getHomePageItemListCallback(it)
             },{
                 Log.d("error", it.message)
             })
-        return ArrayList()
+    }
 
+    // Private function that adds right arrows to the titles of home page items
+    private fun addRightArrows(list : List<HomePageItem>) : List<HomePageItem> {
 
+        list.forEach {
+            it.title += " \u2192"
+        }
+
+        return list
     }
 
 }

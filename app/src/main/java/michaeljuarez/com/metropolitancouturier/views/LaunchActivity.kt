@@ -22,7 +22,9 @@ class LaunchActivity : AppCompatActivity() {
             val intent = Intent(this, HomePageActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out)
+            finish()
         }, 3000)
     }
+
 
 }
