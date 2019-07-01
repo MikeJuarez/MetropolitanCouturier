@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "863984147330",
+    "firebase_url": "https://metropolitancouturier.firebaseio.com",
+    "project_id": "metropolitancouturier",
+    "storage_bucket": "metropolitancouturier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863984147330:android:972d1cf2e30a4071",
+        "android_client_info": {
+          "package_name": "michaeljuarez.com.metropolitancouturier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863984147330-9aq4ekc1gqfbphbkd7n7crhtgfif66lr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "michaeljuarez.com.metropolitancouturier",
+            "certificate_hash": "fa05f2ba732a491f4003796628678be715ac69ca"
+          }
+        },
+        {
+          "client_id": "863984147330-vjq81u69mhlp38m2dk7vc6cdj1st7le0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrjIyVnE5k6O8pVpK4_0Nn4H_IpJtyXOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863984147330-vjq81u69mhlp38m2dk7vc6cdj1st7le0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

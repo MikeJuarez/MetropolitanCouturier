@@ -1,15 +1,15 @@
 package michaeljuarez.com.mvpmodulekotlin
 
-abstract class MvpPresenter(mvpViewParameter : MvpBaseView) {
+public abstract class MvpPresenter<V : Any, M : Any>() {
 
-    protected var mvpView : MvpBaseView
-    protected lateinit var mvpModel : MvpModel
+    protected lateinit var mvpView : V
+    protected lateinit var mvpModel : M
 
-    init {
+    protected fun attachView(mvpViewParameter : V) {
         mvpView = mvpViewParameter
     }
 
-    fun attachModel(mvpModelParameter : MvpModel) {
-        this.mvpModel = mvpModelParameter
+    protected fun attachModel(mvpModelParameter: M) {
+        mvpModel = mvpModelParameter
     }
 }

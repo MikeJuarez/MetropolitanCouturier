@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="launch_text_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">@font/gothic_font</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">64sp</item>
+    </style>
+
+</resources>

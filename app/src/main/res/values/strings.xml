@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">MetropolitanCouturier</string>
+
+    <!-- App Name -->
+    <string name="app_name">Metropolitan Couturier</string>
+    <string name="app_name_first">Metropolitan</string>
+    <string name="app_name_second">Couturier</string>
+
 </resources>

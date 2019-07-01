@@ -3,14 +3,14 @@ package michaeljuarez.com.mvpmodulekotlin
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import javax.xml.transform.Templates
 
-open class MvpBaseActivity : AppCompatActivity(), MvpBaseView {
+abstract class MvpBaseActivity<P : Any> : AppCompatActivity(), MvpBaseView {
 
-    protected lateinit var mvpPresenter : MvpPresenter
+    protected var mvpPresenter : P
+    protected abstract fun createPresenter() : P;
 
-    fun attachPresenter(mvpPresenter: MvpPresenter) {
-        this.mvpPresenter = mvpPresenter
+    init {
+        mvpPresenter = createPresenter()
     }
 
     override fun onCreate(savedInstanceState : Bundle?) {
