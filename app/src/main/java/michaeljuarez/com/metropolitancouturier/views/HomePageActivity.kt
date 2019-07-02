@@ -1,12 +1,12 @@
 package michaeljuarez.com.metropolitancouturier.views
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
-import android.view.MenuItem
 
 import michaeljuarez.com.metropolitancouturier.mvp.home_page.HomePagePresenter
 import michaeljuarez.com.mvpmodulekotlin.MvpBaseActivity
@@ -14,10 +14,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar.*
 import michaeljuarez.com.metropolitancouturier.R
 import michaeljuarez.com.metropolitancouturier.adapters.HomePageAdapter
+import michaeljuarez.com.metropolitancouturier.restful_api_structures.CategoryItem
 import michaeljuarez.com.metropolitancouturier.restful_api_structures.HomePageItem
+import michaeljuarez.com.metropolitancouturier.utility.Constants
 
 class HomePageActivity : MvpBaseActivity<HomePagePresenter>()  {
-
 
     lateinit private var mAdapter : HomePageAdapter
     lateinit private var mLinearLayoutManager : LinearLayoutManager
@@ -26,12 +27,31 @@ class HomePageActivity : MvpBaseActivity<HomePagePresenter>()  {
         return HomePagePresenter(this);
     }
 
+    interface HomePageItemClickListener {
+        fun itemClicked(homePageItem : HomePageItem)
+    }
+
+    // Implementation of HomePageItemClickListener.  Called once list item is clicked
+    var mHomePageItemClickListener : HomePageItemClickListener = object : HomePageItemClickListener {
+        override fun itemClicked(homePageItem: HomePageItem) {
+
+            when (homePageItem.title) {
+                "Women's \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.WOMEN)
+                "Men's \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.MEN)
+                "Home \u2192"-> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.HOME)
+                "Lifestyle \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.LIFESTYLE)
+                "Beauty \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.BEAUTY)
+                "Sale \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.SALE)
+                "Gift Cards \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.GIFT_CARDS)
+            }
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         toolbar.setTitle(R.string.shop)
         setSupportActionBar(toolbar)
-
 
         var toggle = ActionBarDrawerToggle(
             this, home_drawer_layout, toolbar, R.string.shop, R.string.shop)
@@ -61,11 +81,22 @@ class HomePageActivity : MvpBaseActivity<HomePagePresenter>()  {
     }
 
     fun homePageItemsCallback(homePageItemList : List<HomePageItem>?) {
-        mAdapter = HomePageAdapter(homePageItemList)
+        mAdapter = HomePageAdapter(homePageItemList, mHomePageItemClickListener)
         mLinearLayoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         recyclerView.adapter = mAdapter
         recyclerView.layoutManager = mLinearLayoutManager
     }
+
+    fun categoryItemsCallback(category : HomePageItem.HomePageItem, categoryItemList : ArrayList<CategoryItem>?) {
+
+        val intent = Intent(this, CategoryActivity::class.java)
+        intent.putParcelableArrayListExtra(Constants.CATEGORIES_KEY, categoryItemList)
+        intent.putExtra(Constants.CATEGORY_TYPE_KEY, category.name)
+        startActivity(intent)
+
+    }
+
+
 
 }

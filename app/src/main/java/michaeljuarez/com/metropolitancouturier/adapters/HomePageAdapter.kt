@@ -8,8 +8,9 @@ import michaeljuarez.com.metropolitancouturier.R
 import kotlinx.android.synthetic.main.list_item_home_page.view.*
 import michaeljuarez.com.metropolitancouturier.restful_api_structures.HomePageItem
 import michaeljuarez.com.metropolitancouturier.utility.GlideApp
+import michaeljuarez.com.metropolitancouturier.views.HomePageActivity
 
-class HomePageAdapter(val items: List<HomePageItem>?) : RecyclerView.Adapter<HomePageAdapter.HomePageItemViewHolder>() {
+class HomePageAdapter(val items: List<HomePageItem>?, val listener : HomePageActivity.HomePageItemClickListener) : RecyclerView.Adapter<HomePageAdapter.HomePageItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomePageItemViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item_home_page, parent, false)
@@ -26,6 +27,9 @@ class HomePageAdapter(val items: List<HomePageItem>?) : RecyclerView.Adapter<Hom
     override fun onBindViewHolder(holder: HomePageItemViewHolder, position: Int) {
         if (items != null) {
             holder.bind(items.get(holder.adapterPosition))
+            holder.itemView.setOnClickListener {
+                listener.itemClicked(items.get(holder.adapterPosition))//To change body of created functions use File | Settings | File Templates.
+            }
         }
     }
 

@@ -8,4 +8,7 @@ interface ApiHomePage {
     @GET("/home.json")
     fun getHomePageItems() : Observable<List<HomePageItem>>
 
+    @GET("/women_categories.json")
+    fun getWomenCategories() : Observable<ArrayList<CategoryItem>>
+
 }

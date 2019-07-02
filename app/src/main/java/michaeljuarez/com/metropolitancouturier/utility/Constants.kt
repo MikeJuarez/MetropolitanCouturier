@@ -2,18 +2,10 @@ package michaeljuarez.com.metropolitancouturier.utility
 
 class Constants {
 
-    abstract class main {
+    companion object {
 
-        var websiteRoot = "https://metropolitancouturier.firebaseio.com/HomeResponse/main.json"
-
-        var homeWomensRoot = "womens/"
-        var homeMensRoot = "mens/"
-        var homeBeautyRoot = "beauty/"
-        var homeGiftCardsRoot = "gift-cards/"
-        var homeLifestyleRoot = "lifestyle/"
-        var homeSaleRoot = "sale/"
-        var homeHomeRoot = "HomeResponse/"
-
+        val CATEGORIES_KEY = "KEY.CATEGORIES"
+        val CATEGORY_TYPE_KEY = "KEY.CATEGORY_TYPE"
     }
 
 }

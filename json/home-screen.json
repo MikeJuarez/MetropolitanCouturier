@@ -1,33 +1,77 @@
 {
-    "home": [
-      {
-        "image_url": "https://melmagazine.com/wp-content/uploads/2018/08/1NPTw5uIT4COChKKS4_Bopg.png",
-        "title": "Women's"
-      },
-      {
-        "image_url": "https://pmcwwd.files.wordpress.com/2019/01/shutterstock_1290020740.jpg?w=640&h=415&crop=1",
-        "title": "Men's"
-      },
-      {
-        "image_url": "https://images-na.ssl-images-amazon.com/images/I/91OBAHrgZtL._SL1500_.jpg",
-        "title": "Home"
-      },
-      {
-        "image_url": "https://my-live-01.slatic.net/p/bd317746ab99f1b9824a368eb8a366c2.jpg",
-        "title": "Lifestyle"
-      },
-      {
-        "image_url": "https://www.shefinds.com/files/2017/09/urban-outfitters-products.jpg",
-        "title": "Beauty"
-      },
-      {
-        "image_url": "https://s23527.pcdn.co/wp-content/uploads/2017/05/models-745x381.jpg",
-        "title": "Sale"
-      },
-      {
-        "image_url": "https://i.pinimg.com/originals/a2/81/96/a281967e2b88f69c54087763af7599c6.jpg",
-        "title": "Gift Cards"
-      }
-    ]
+  "home":
+  [
+    {
+      "image_url": "https://melmagazine.com/wp-content/uploads/2018/08/1NPTw5uIT4COChKKS4_Bopg.png",
+      "title": "Women's"
+    },
+    {
+      "image_url": "https://pmcwwd.files.wordpress.com/2019/01/shutterstock_1290020740.jpg?w=640&h=415&crop=1",
+      "title": "Men's"
+    },
+    {
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/91OBAHrgZtL._SL1500_.jpg",
+      "title": "Home"
+    },
+    {
+      "image_url": "https://my-live-01.slatic.net/p/bd317746ab99f1b9824a368eb8a366c2.jpg",
+      "title": "Lifestyle"
+    },
+    {
+      "image_url": "https://www.shefinds.com/files/2017/09/urban-outfitters-products.jpg",
+      "title": "Beauty"
+    },
+    {
+      "image_url": "https://s23527.pcdn.co/wp-content/uploads/2017/05/models-745x381.jpg",
+      "title": "Sale"
+    },
+    {
+      "image_url": "https://i.pinimg.com/originals/a2/81/96/a281967e2b88f69c54087763af7599c6.jpg",
+      "title": "Gift Cards"
+    }
+  ],
+  "women_categories":
+  [
+    {
+      "category":"New"
+    },
+    {
+      "category":"Dresses + Rompers"
+    },
+    {
+      "category":"Tops"
+    },
+    {
+      "category":"Jackets"
+    },
+    {
+      "category":"Bottoms"
+    },
+    {
+      "category":"Intimates"
+    },
+    {
+      "category":"Swim"
+    },
+    {
+      "category":"Vintage"
+    },
+    {
+      "category":"Beauty"
+    },
+    {
+      "category":"Accessories"
+    },
+    {
+      "category":"Shoes"
+    },
+    {
+      "category":"Brands"
+    },
+    {
+      "category":"Sale"
+    }
+  ]
+
 
 }
