@@ -12,7 +12,7 @@ import michaeljuarez.com.metropolitancouturier.restful_api_structures.HomePageIt
 import michaeljuarez.com.metropolitancouturier.utility.GlideApp
 import michaeljuarez.com.metropolitancouturier.views.HomePageActivity
 
-class CategoryAdapter(val items: List<CategoryItem>?) : RecyclerView.Adapter<CategoryAdapter.CategoryItemViewHolder>() {
+class CategoryAdapter(val items: ArrayList<CategoryItem>?) : RecyclerView.Adapter<CategoryAdapter.CategoryItemViewHolder>() {
 
     override fun onCreateViewHolder(parent : ViewGroup, viewType : Int): CategoryItemViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item_category, parent, false)
