@@ -25,10 +25,6 @@ class HomePageModel(presenter : HomePagePresenter) : MvpModel<HomePagePresenter>
         fun onSuccess(homePageItemList : List<HomePageItem>?)
     }
 
-    interface GetCategoryItemsCallback {
-        fun getCategoryItems(categoryItemList : ArrayList<CategoryItem>?)
-    }
-
     @SuppressLint("CheckResult")
     fun loadHomePageItems(homePageCallback : LoadHomePageItemsCallback) {
 
@@ -47,29 +43,6 @@ class HomePageModel(presenter : HomePagePresenter) : MvpModel<HomePagePresenter>
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
                 homePageCallback.onSuccess(it)
-                //mvpPresenter.getHomePageItemListCallback(it)
-            },{
-                Log.d("error", it.message)
-            })
-    }
-
-    @SuppressLint("CheckResult")
-    fun getCategoryItems(categoryItemCallback : GetCategoryItemsCallback) {
-
-        val retrofit : Retrofit = Retrofit.Builder()
-            .baseUrl("https://metropolitancouturier.firebaseio.com")
-            .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            .build()
-
-        val apiHomePageItems = retrofit.create(ApiHomePage::class.java)
-
-        apiHomePageItems.getWomenCategories()
-            .subscribeOn(Schedulers.io())
-            .unsubscribeOn(Schedulers.computation())
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({
-                categoryItemCallback.getCategoryItems(it)
             },{
                 Log.d("error", it.message)
             })

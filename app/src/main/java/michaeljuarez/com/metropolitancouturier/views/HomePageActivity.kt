@@ -35,15 +35,21 @@ class HomePageActivity : MvpBaseActivity<HomePagePresenter>()  {
     var mHomePageItemClickListener : HomePageItemClickListener = object : HomePageItemClickListener {
         override fun itemClicked(homePageItem: HomePageItem) {
 
+            var homePageItemKey : HomePageItem.HomePageItem? = HomePageItem.HomePageItem.WOMEN
+
             when (homePageItem.title) {
-                "Women's \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.WOMEN)
-                "Men's \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.MEN)
-                "Home \u2192"-> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.HOME)
-                "Lifestyle \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.LIFESTYLE)
-                "Beauty \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.BEAUTY)
-                "Sale \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.SALE)
-                "Gift Cards \u2192" -> mvpPresenter.getCategoryList(HomePageItem.HomePageItem.GIFT_CARDS)
+                "Women's \u2192" -> homePageItemKey = HomePageItem.HomePageItem.WOMEN
+                "Men's \u2192" -> homePageItemKey = HomePageItem.HomePageItem.MEN
+                "Home \u2192"-> homePageItemKey = HomePageItem.HomePageItem.HOME
+                "Lifestyle \u2192" -> homePageItemKey = HomePageItem.HomePageItem.LIFESTYLE
+                "Beauty \u2192" -> homePageItemKey = HomePageItem.HomePageItem.BEAUTY
+                "Sale \u2192" -> homePageItemKey = HomePageItem.HomePageItem.SALE
+                "Gift Cards \u2192" -> homePageItemKey = HomePageItem.HomePageItem.GIFT_CARDS
             }
+
+            val intent = Intent(this@HomePageActivity, CategoryActivity::class.java)
+            intent.putExtra(Constants.HOME_PAGE_TYPE_KEY, homePageItemKey.toString())
+            startActivity(intent)
         }
     }
 
@@ -90,10 +96,7 @@ class HomePageActivity : MvpBaseActivity<HomePagePresenter>()  {
 
     fun categoryItemsCallback(category : HomePageItem.HomePageItem, categoryItemList : ArrayList<CategoryItem>?) {
 
-        val intent = Intent(this, CategoryActivity::class.java)
-        intent.putParcelableArrayListExtra(Constants.CATEGORIES_KEY, categoryItemList)
-        intent.putExtra(Constants.CATEGORY_TYPE_KEY, category.name)
-        startActivity(intent)
+
 
     }
 

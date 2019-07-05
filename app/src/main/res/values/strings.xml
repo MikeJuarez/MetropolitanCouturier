@@ -18,4 +18,21 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
 
+    <!-- Categories -->
+
+    <!-- Women -->
+    <string name="category_new">New</string>
+    <string name="category_dresses_rompers">Dresses + Rompers</string>
+    <string name="category_tops">Tops</string>
+    <string name="category_jackets">Jackets</string>
+    <string name="category_bottoms">Bottoms</string>
+    <string name="category_intimates">Intimates</string>
+    <string name="category_swim">Swim</string>
+    <string name="category_vintage">Vintage</string>
+    <string name="category_beauty">Beauty</string>
+    <string name="category_accessories">Accessories</string>
+    <string name="category_shoes">Shoes</string>
+    <string name="category_brands">brands</string>
+    <string name="category_sale">sale</string>
+
 </resources>

@@ -26,15 +26,4 @@ class HomePagePresenter(view : HomePageActivity) : MvpPresenter<HomePageActivity
         mvpModel.loadHomePageItems(callback)
     }
 
-    fun getCategoryList(homePageItem: HomePageItem.HomePageItem) {
-
-        val callback = object : HomePageModel.GetCategoryItemsCallback {
-            override fun getCategoryItems(categoryItemList : ArrayList<CategoryItem>?) {
-                mvpView.categoryItemsCallback(homePageItem, categoryItemList)
-            }
-        }
-
-        mvpModel.getCategoryItems(callback)
-    }
-
 }

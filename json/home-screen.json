@@ -1,5 +1,5 @@
 {
-  "home":
+  "Home":
   [
     {
       "image_url": "https://melmagazine.com/wp-content/uploads/2018/08/1NPTw5uIT4COChKKS4_Bopg.png",
@@ -30,48 +30,130 @@
       "title": "Gift Cards"
     }
   ],
-  "women_categories":
-  [
-    {
-      "category":"New"
-    },
-    {
-      "category":"Dresses + Rompers"
-    },
-    {
-      "category":"Tops"
-    },
-    {
-      "category":"Jackets"
-    },
-    {
-      "category":"Bottoms"
-    },
-    {
-      "category":"Intimates"
-    },
-    {
-      "category":"Swim"
-    },
-    {
-      "category":"Vintage"
-    },
-    {
-      "category":"Beauty"
-    },
-    {
-      "category":"Accessories"
-    },
-    {
-      "category":"Shoes"
-    },
-    {
-      "category":"Brands"
-    },
-    {
-      "category":"Sale"
+  "Categories": {
+    "Women":  {
+      "New": [
+        {
+          "id" : "WOM-NEW-1",
+          "price" : 1000.99,
+          "item_brand": "Not Metropolitan Dress",
+          "item_name" : "White Sequin Dress",
+          "image_url" : "http://i68.tinypic.com/ix5c06.jpg",
+          "size_xsmall" : 1,
+          "size_small" : 25,
+          "size_medium" : 15,
+          "size_large" : -1,
+          "size_xlarge" : 5
+        },
+        {
+          "id" : "WOM-NEW-2",
+          "price" : 25.49,
+          "item_brand": "Shopify Partners from Burst",
+          "item_name" : "Off Shoulder Red Cocktail Dress",
+          "image_url" : "http://i64.tinypic.com/2rfvi41.jpg",
+          "size_xsmall" : -1,
+          "size_small" : 2,
+          "size_medium" : 7,
+          "size_large" : 30,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-3",
+          "price" : 13.99,
+          "item_brand": "Shopify Partners from Burst",
+          "item_name" : "Flower Summer Dress",
+          "image_url" : "http://i68.tinypic.com/e9zog1.jpg",
+          "size_xsmall" : 5,
+          "size_small" : 13,
+          "size_medium" : 24,
+          "size_large" : 2,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-4",
+          "price" : 3999.99,
+          "item_brand": "Shopify Partners from Burst",
+          "item_name" : "Flower Cotton Dress",
+          "image_url" : "http://i66.tinypic.com/2qscdp2.jpg",
+          "size_xsmall" : 5,
+          "size_small" : 25,
+          "size_medium" : 6,
+          "size_large" : 90,
+          "size_xlarge" : 25
+        },
+        {
+          "id" : "WOM-NEW-5",
+          "price" : 1415.99,
+          "item_brand": "Shopify Partners from Burst",
+          "item_name" : "Vineyard Dress",
+          "image_url" : "http://i66.tinypic.com/ra296x.jpg",
+          "size_xsmall" : -1,
+          "size_small" : -1,
+          "size_medium" : 300,
+          "size_large" : -1,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-6",
+          "price" : 9999.99,
+          "item_brand": "Shopify Partners from Burst",
+          "item_name" : "Ruffled Red Dress",
+          "image_url" : "http://i66.tinypic.com/214s2kx.jpg",
+          "size_xsmall" : 5,
+          "size_small" : 0,
+          "size_medium" : 29,
+          "size_large" : 18,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-7",
+          "price" : 3259.49,
+          "item_brand": "Shopify Partners from Burst",
+          "item_name" : "Woman in grass dress",
+          "image_url" : "http://i63.tinypic.com/2em39nb.jpg",
+          "size_xsmall" : 3,
+          "size_small" : 0,
+          "size_medium" : 5,
+          "size_large" : 25,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-8",
+          "price" : 6782.99,
+          "item_brand": "Shopify Partners from Burst",
+          "item_name" : "Polka Dot Summer Dress",
+          "image_url" : "http://i64.tinypic.com/2wgx3l4.jpg",
+          "size_xsmall" : 23,
+          "size_small" : 10,
+          "size_medium" : 35,
+          "size_large" : 22,
+          "size_xlarge" : 1
+        },
+        {
+          "id" : "WOM-NEW-9",
+          "price" : 6999.99,
+          "item_brand": "Shopify Partners from Burst",
+          "item_name" : "Beautiful Yellow Dress",
+          "image_url" : "http://i65.tinypic.com/v8eqhf.jpg",
+          "size_xsmall" : 3,
+          "size_small" : 0,
+          "size_medium" : 5,
+          "size_large" : 25,
+          "size_xlarge" : -1
+        }
+      ],
+      "Dresses + Rompers": [{}],
+      "Tops" : [{}],
+      "Jackets" : [{}],
+      "Bottoms" : [{}],
+      "Intimates" : [{}],
+      "Swim" : [{}],
+      "Vintage" : [{}],
+      "Beauty" : [{}],
+      "Accessories" : [{}],
+      "Shoes" : [{}],
+      "Brands" : [{}],
+      "Sale" : [{}]
     }
-  ]
-
-
+  }
 }

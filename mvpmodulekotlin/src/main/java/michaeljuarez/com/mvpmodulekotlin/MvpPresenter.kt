@@ -1,6 +1,6 @@
 package michaeljuarez.com.mvpmodulekotlin
 
-public abstract class MvpPresenter<V : Any, M : Any>() {
+abstract class MvpPresenter<V : Any, M : Any>() {
 
     protected lateinit var mvpView : V
     protected lateinit var mvpModel : M

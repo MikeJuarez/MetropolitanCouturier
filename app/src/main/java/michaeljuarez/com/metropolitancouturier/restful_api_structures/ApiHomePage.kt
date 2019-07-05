@@ -5,10 +5,10 @@ import retrofit2.http.GET
 
 interface ApiHomePage {
 
-    @GET("/home.json")
+    @GET("/Home.json")
     fun getHomePageItems() : Observable<List<HomePageItem>>
 
-    @GET("/women_categories.json")
-    fun getWomenCategories() : Observable<ArrayList<CategoryItem>>
+    @GET("/Categories/Women/New.json")
+    fun getCategoriesWomenNewRetailItems() : Observable<ArrayList<RetailItem>>
 
 }
