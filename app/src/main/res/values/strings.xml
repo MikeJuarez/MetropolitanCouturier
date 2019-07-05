@@ -35,4 +35,7 @@
     <string name="category_brands">brands</string>
     <string name="category_sale">sale</string>
 
+    <!-- Retail List -->
+    <string name="retail_list_adapter_price">Price: $</string>
+
 </resources>

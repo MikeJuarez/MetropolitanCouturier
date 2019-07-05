@@ -44,7 +44,7 @@ class RetailItemListAdapter (val items: List<RetailItem>?) : RecyclerView.Adapte
 
             itemView.retailItemBrandTextView.text = item.item_brand
             itemView.retailItemNameTextView.text = item.item_name
-            item.price?.let { itemView.retailItemPriceTextView.text = "" + it }
+            item.price?.let { itemView.retailItemPriceTextView.text = itemView.context.getString(R.string.retail_list_adapter_price) + it }
         }
     }
 

@@ -34,6 +34,8 @@ class CategoryAdapter(val items: ArrayList<String>?, val categoryClickCallback :
                 holder.itemView.setOnClickListener{
                     categoryClickCallback.newCategoryClicked()
                 }
+            } else {
+                holder.itemView.categoryName.setTextColor(holder.itemView.context.resources.getColor(R.color.mtrl_btn_bg_color_disabled))
             }
         }
     }

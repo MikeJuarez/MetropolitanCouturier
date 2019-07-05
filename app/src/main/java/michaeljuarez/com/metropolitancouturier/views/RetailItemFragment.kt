@@ -2,6 +2,7 @@ package michaeljuarez.com.metropolitancouturier.views
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.app.SharedElementCallback
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.ContextMenu
@@ -46,4 +47,5 @@ class RetailItemFragment : Fragment() {
         retailItemRecyclerView.layoutManager = mGridLayoutManager
         retailItemRecyclerView.adapter = mAdapter
     }
+
 }

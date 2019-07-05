@@ -80,6 +80,7 @@ class CategoryActivity : AppCompatActivity() {
     var mCategoryClickCallbackClicked : CategoryClickCallback = object : CategoryClickCallback {
         override fun newCategoryClicked() {
             val intent = Intent(this@CategoryActivity, RetailItemsActivity::class.java)
+            intent.putExtra(Constants.HOME_PAGE_TYPE_KEY, mHomePageType)
             startActivity(intent)
         }
     }

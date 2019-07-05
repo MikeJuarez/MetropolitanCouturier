@@ -4,15 +4,15 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
 
-        android:layout_margin="16dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp">
     <LinearLayout
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="8dp">
 
         <ImageView
                 android:id="@+id/retailItemImage"
@@ -28,11 +28,14 @@
                     android:id="@+id/retailItemBrandTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textStyle="bold"
                     tools:text="Reebok"/>
             <TextView
                     android:id="@+id/retailItemNameTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:maxLines="1"
                     tools:text="Aztrek Double Nu Pops Sneaker"/>
             <TextView
                     android:id="@+id/retailItemPriceTextView"

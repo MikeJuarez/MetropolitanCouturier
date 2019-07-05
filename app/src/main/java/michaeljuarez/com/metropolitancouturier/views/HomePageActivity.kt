@@ -94,12 +94,4 @@ class HomePageActivity : MvpBaseActivity<HomePagePresenter>()  {
         recyclerView.layoutManager = mLinearLayoutManager
     }
 
-    fun categoryItemsCallback(category : HomePageItem.HomePageItem, categoryItemList : ArrayList<CategoryItem>?) {
-
-
-
-    }
-
-
-
 }
