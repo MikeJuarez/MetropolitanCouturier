@@ -6,27 +6,29 @@ import android.os.Parcelable
 class RetailItem() : Parcelable {
 
     var id : String? = ""
-    var price : Float? = 0f
+    var price : Float = 0f
     var item_brand : String? = ""
     var item_name : String? = ""
-    var image_url : String? = ""
-    var size_xsmall : Int? = 0
-    var size_small : Int? = 0
-    var size_medium : Int? = 0
-    var size_large : Int? = 0
-    var size_xlarge : Int? = 0
+    var image_url : List<String> = ArrayList<String>()
+    var colors : List<String> = ArrayList<String>()
+    var size_xsmall : Int = 0
+    var size_small : Int = 0
+    var size_medium : Int = 0
+    var size_large : Int = 0
+    var size_xlarge : Int = 0
 
     constructor(parcel: Parcel) : this() {
         id = parcel.readString()
-        price = parcel.readValue(Int::class.java.classLoader) as? Float
+        price = parcel.readFloat()
         item_brand = parcel.readString()
         item_name = parcel.readString()
-        image_url = parcel.readString()
-        size_xsmall = parcel.readValue(Int::class.java.classLoader) as? Int
-        size_small = parcel.readValue(Int::class.java.classLoader) as? Int
-        size_medium = parcel.readValue(Int::class.java.classLoader) as? Int
-        size_large = parcel.readValue(Int::class.java.classLoader) as? Int
-        size_xlarge = parcel.readValue(Int::class.java.classLoader) as? Int
+        parcel.readStringList(image_url)
+        parcel.readStringList(colors)
+        size_xsmall = parcel.readInt()
+        size_small = parcel.readInt()
+        size_medium = parcel.readInt()
+        size_large = parcel.readInt()
+        size_xlarge = parcel.readInt()
     }
 
     companion object CREATOR : Parcelable.Creator<RetailItem> {
@@ -41,15 +43,16 @@ class RetailItem() : Parcelable {
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(id)
-        price?.let { parcel.writeFloat(it) }
+        parcel.writeFloat(price)
         parcel.writeString(item_brand)
         parcel.writeString(item_name)
-        parcel.writeString(image_url)
-        size_xsmall?.let { parcel.writeInt(it)}
-        size_small?.let { parcel.writeInt(it)}
-        size_medium?.let { parcel.writeInt(it)}
-        size_large?.let { parcel.writeInt(it)}
-        size_xlarge?.let { parcel.writeInt(it)}
+        parcel.writeStringList(image_url)
+        parcel.writeStringList(colors)
+        parcel.writeInt(size_xsmall)
+        parcel.writeInt(size_small)
+        parcel.writeInt(size_medium)
+        parcel.writeInt(size_large)
+        parcel.writeInt(size_xlarge)
     }
 
     override fun describeContents(): Int {

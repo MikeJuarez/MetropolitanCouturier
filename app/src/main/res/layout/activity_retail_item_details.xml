@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/retailItemDetailsRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="350dp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                tools:listitem="@layout/list_item_retail_item_details_image"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView android:id="@+id/retailItemDetailsBrand"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:textStyle="bold"
+                  android:textColor="@color/circleColorBlack"
+
+                  android:layout_marginTop="16dp"
+                  android:layout_marginStart="16dp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/retailItemDetailsRecyclerView"
+                  tools:text="Not Metropolitan Courier"/>
+
+        <TextView android:id="@+id/retailItemDetailsDescription"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+
+                  android:layout_marginStart="16dp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/retailItemDetailsBrand"
+                  tools:text="Kimchi Blue Tie Dye Coverall Jumpsuit"/>
+
+        <TextView android:id="@+id/retailItemDetailsPrice"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+
+                  android:layout_marginStart="16dp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/retailItemDetailsDescription"
+                  tools:text="$129.00"/>
+
+        <TextView
+                android:id="@+id/retailItemDetailsColorLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/color"
+                android:textStyle="bold"
+
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/retailItemDetailsPrice"/>
+
+        <TextView
+                android:id="@+id/retailItemDetailsColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/color"
+
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/retailItemDetailsColorLabel"
+                app:layout_constraintTop_toBottomOf="@id/retailItemDetailsPrice"
+                tools:text="Pink"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/retailItemDetailsColorRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@id/retailItemDetailsColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                tools:listitem="@layout/list_item_retail_details_color"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

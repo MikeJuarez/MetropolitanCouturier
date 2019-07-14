@@ -28,7 +28,7 @@ class HomePageAdapter(val items: List<HomePageItem>?, val listener : HomePageAct
         if (items != null) {
             holder.bind(items.get(holder.adapterPosition))
             holder.itemView.setOnClickListener {
-                listener.itemClicked(items.get(holder.adapterPosition))//To change body of created functions use File | Settings | File Templates.
+                listener.itemClicked(items.get(holder.adapterPosition))
             }
         }
     }

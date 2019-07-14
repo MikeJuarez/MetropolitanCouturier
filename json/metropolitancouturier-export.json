@@ -1,0 +1,223 @@
+{
+  "Home":
+  [
+    {
+      "image_url": "https://melmagazine.com/wp-content/uploads/2018/08/1NPTw5uIT4COChKKS4_Bopg.png",
+      "title": "Women's"
+    },
+    {
+      "image_url": "https://pmcwwd.files.wordpress.com/2019/01/shutterstock_1290020740.jpg?w=640&h=415&crop=1",
+      "title": "Men's"
+    },
+    {
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/91OBAHrgZtL._SL1500_.jpg",
+      "title": "Home"
+    },
+    {
+      "image_url": "https://my-live-01.slatic.net/p/bd317746ab99f1b9824a368eb8a366c2.jpg",
+      "title": "Lifestyle"
+    },
+    {
+      "image_url": "https://www.shefinds.com/files/2017/09/urban-outfitters-products.jpg",
+      "title": "Beauty"
+    },
+    {
+      "image_url": "https://s23527.pcdn.co/wp-content/uploads/2017/05/models-745x381.jpg",
+      "title": "Sale"
+    },
+    {
+      "image_url": "https://i.pinimg.com/originals/a2/81/96/a281967e2b88f69c54087763af7599c6.jpg",
+      "title": "Gift Cards"
+    }
+  ],
+  "Categories": {
+    "Women":  {
+      "New": [
+        {
+          "id" : "WOM-NEW-1",
+          "price" : 1000.99,
+          "item_brand": "ELEGANTLY INCLINED",
+          "item_name" : "Cream Floral Print Wrap Maxi Dress",
+          "image_url" : [
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-1b.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-1c.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-1d.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-1e.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-1f.jpg?raw=true"
+
+          ],
+          "colors" : ["white"],
+          "size_xsmall" : 1,
+          "size_small" : 25,
+          "size_medium" : 15,
+          "size_large" : -1,
+          "size_xlarge" : 5
+        },
+        {
+          "id" : "WOM-NEW-2",
+          "price" : 79.00,
+          "item_brand": "BRIARWOOD",
+          "item_name" : "Off Shoulder Red Cocktail Dress",
+          "image_url" : [
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-2.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-2b.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-2c.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-2d.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-2e.jpg?raw=true"
+          ],
+          "colors" : ["red"],
+          "size_xsmall" : -1,
+          "size_small" : 2,
+          "size_medium" : 7,
+          "size_large" : 30,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-3",
+          "price" : 50.00,
+          "item_brand": "Garden Walk",
+          "item_name" : "Blush Pink Floral Print Lace-up Skater Dress",
+          "image_url" : [
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-3.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-3.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-3.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-3.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-3.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-3.jpg?raw=true"
+          ],
+          "colors" : ["white", "black", "blue", "red", "green", "pink"],
+          "size_xsmall" : 5,
+          "size_small" : 13,
+          "size_medium" : 24,
+          "size_large" : 2,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-4",
+          "price" : 100.00,
+          "item_brand": "Garden Meandering",
+          "item_name" : "Blush Floral Print Maxi Dress",
+          "image_url" : [
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-4.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-4b.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-4c.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-4d.jpg?raw=true"
+          ],
+          "colors" : ["white", "black", "blue", "red", "green", "pink"],
+          "size_xsmall" : 5,
+          "size_small" : 25,
+          "size_medium" : 6,
+          "size_large" : 90,
+          "size_xlarge" : 25
+        },
+        {
+          "id" : "WOM-NEW-5",
+          "price" : 72.00,
+          "item_brand": "ALL ABOUT LOVE",
+          "item_name" : "Royal Blue Floral Print Midi Dress",
+          "website" : "https://www.lulus.com/products/all-about-love-royal-blue-floral-print-midi-dress/800282.html",
+          "image_url" : [
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-5.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-5b.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-5c.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-5d.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-5e.jpg?raw=true"
+          ],
+          "colors" : ["white", "blue", "red", "pink"],
+          "size_xsmall" : -1,
+          "size_small" : -1,
+          "size_medium" : 300,
+          "size_large" : -1,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-6",
+          "price" : 67,
+          "item_brand": "LOVE IN BLOOM",
+          "item_name" : "Black Floral Print Off-The-Shoulder High-Low Dress",
+          "website" : "https://www.lulus.com/products/love-in-bloom-black-floral-print-off-the-shoulder-high-low-dress/772072.html",
+          "image_url" : [
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-6.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-6b.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-6c.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-6d.jpg?raw=true"
+          ],
+          "colors" : ["black"],
+          "size_xsmall" : 5,
+          "size_small" : 0,
+          "size_medium" : 29,
+          "size_large" : 18,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-7",
+          "price" : 66.00,
+          "item_brand": "MYTHICAL KIND OF LOVE",
+          "item_name" : "Coral Pink Maxi Dress",
+          "image_url" : [
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-7.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-7b.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-7c.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-7d.jpg?raw=true"
+          ],
+          "colors" : ["white", "green"],
+          "size_xsmall" : 3,
+          "size_small" : 0,
+          "size_medium" : 5,
+          "size_large" : 25,
+          "size_xlarge" : -1
+        },
+        {
+          "id" : "WOM-NEW-8",
+          "price" : 40.99,
+          "item_brand": "DESTINI",
+          "item_name" : "White and Red Polka Dot Wrap top",
+          "website" : "https://www.lulus.com/products/destini-white-and-red-polka-dot-wrap-top/817522.html",
+          "image_url" : [
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-8.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-8b.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-8c.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-8d.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-8e.jpg?raw=true"
+          ],
+          "colors" : ["white", "pink", "green"],
+          "size_xsmall" : 23,
+          "size_small" : 10,
+          "size_medium" : 35,
+          "size_large" : 22,
+          "size_xlarge" : 1
+        },
+        {
+          "id" : "WOM-NEW-9",
+          "price" : 70.00,
+          "item_brand": "HEART OF MARIGOLD",
+          "item_name" : "Yellow Tropical Print Wrap Maxi Dress",
+          "image_url" : [
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-9.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-9b.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-9c.jpg?raw=true",
+            "https://github.com/MikeJuarez/MetropolitanCouturier/blob/master/images/categories/women/new/WOM-NEW-9d.jpg?raw=true"
+          ],
+          "colors" : ["yellow"],
+          "size_xsmall" : 3,
+          "size_small" : 0,
+          "size_medium" : 5,
+          "size_large" : 25,
+          "size_xlarge" : -1
+        }
+      ],
+      "Dresses + Rompers": [{}],
+      "Tops" : [{}],
+      "Jackets" : [{}],
+      "Bottoms" : [{}],
+      "Intimates" : [{}],
+      "Swim" : [{}],
+      "Vintage" : [{}],
+      "Beauty" : [{}],
+      "Accessories" : [{}],
+      "Shoes" : [{}],
+      "Brands" : [{}],
+      "Sale" : [{}]
+    }
+  }
+}

@@ -3,4 +3,14 @@
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#EEEEEE</color>
+
+    <color name="circleColorBlack">#000000</color>
+    <color name="circleColorRed">#FF0000</color>
+    <color name="circleColorPink">#FF69B4</color>
+    <color name="circleColorGreen">#008000</color>
+    <color name="circleColorBlue">#0000FF</color>
+    <color name="color_light_gray">#D3D3D3</color>
+
+    <color name="yellow_start">#FFFFCC</color>
+    <color name="yellow_end">#FFFF00</color>
 </resources>

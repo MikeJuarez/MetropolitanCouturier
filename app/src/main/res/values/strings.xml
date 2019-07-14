@@ -37,5 +37,6 @@
 
     <!-- Retail List -->
     <string name="retail_list_adapter_price">Price: $</string>
+    <string name="color">Color:</string>
 
 </resources>

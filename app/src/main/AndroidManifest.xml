@@ -22,6 +22,7 @@
         <activity android:name=".views.HomePageActivity"/>
         <activity android:name=".views.CategoryActivity"/>
         <activity android:name=".views.RetailItemsActivity"/>
+        <activity android:name=".views.RetailItemDetailsActivity"/>
     </application>
 
 </manifest>

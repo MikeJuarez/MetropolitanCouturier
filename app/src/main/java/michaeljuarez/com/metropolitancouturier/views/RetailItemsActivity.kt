@@ -1,10 +1,8 @@
 package michaeljuarez.com.metropolitancouturier.views
 
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_retailitems.*
+import kotlinx.android.synthetic.main.activity_retail_items.*
 import kotlinx.android.synthetic.main.toolbar.*
 import michaeljuarez.com.metropolitancouturier.R
 import michaeljuarez.com.metropolitancouturier.adapters.RetailItemViewPagerAdapter
@@ -25,7 +23,7 @@ class RetailItemsActivity : MvpBaseActivity<RetailItemPresenter>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mHomePageType = intent!!.getStringExtra(Constants.HOME_PAGE_TYPE_KEY)
-        setContentView(R.layout.activity_retailitems)
+        setContentView(R.layout.activity_retail_items)
 
         // Set up toolbar
         toolbar.setTitle(mHomePageType)
